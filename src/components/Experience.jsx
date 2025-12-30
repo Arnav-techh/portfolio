@@ -25,7 +25,7 @@ const Experience = () => {
               <li>Automated repetitive business processes</li>
               <li>Hands-on experience with bots & orchestration</li>
             </ul>
-            <a href="/portfolio/assests/uipath-training.pdf" className="exp-cert highlighted" target="_blank" rel="noreferrer">
+            <a href="/assests/uipath-training.pdf" className="exp-cert highlighted" target="_blank" rel="noreferrer">
               <i className='bx bxs-file-pdf'></i> View Certificate
             </a>
           </div>
@@ -50,7 +50,7 @@ const Experience = () => {
               <li>Integrated REST APIs for real-time data</li>
               <li>Worked in agile sprints and code reviews</li>
             </ul>
-            <a href="/portfolio/assests/web-dev-internship.pdf" className="exp-cert highlighted" target="_blank" rel="noreferrer">
+            <a href="/assests/web-dev-internship.pdf" className="exp-cert highlighted" target="_blank" rel="noreferrer">
               <i className='bx bxs-file-pdf'></i> View Certificate
             </a>
           </div>

@@ -28,7 +28,7 @@ const Certificate = () => {
       subtitle: "Django Web Development", 
       tagline: "Core Python foundations and web development with Django.",
       meta: "Certificate & Online Assessment",
-      pdf: "/portfolio/assests/Python_cert.pdf",
+      pdf: "/assests/Python_cert.pdf",
       profile: "https://www.hackerrank.com/profile/ArnavKaneriya"
     },
     {
@@ -37,7 +37,7 @@ const Certificate = () => {
       subtitle: "Cloud Fundamentals",
       tagline: "Fundamentals of cloud platforms, services and deployment models.",
       meta: "Certificate",
-      pdf: "/portfolio/assests/Cloud_Computing_Essentials.pdf"
+      pdf: "/assests/Cloud_Computing_Essentials.pdf"
     },
     {
       icon: "🤖",
@@ -45,7 +45,7 @@ const Certificate = () => {
       subtitle: "Industrial Training",
       tagline: "Industrial training focused on AI workflows, model building and deployment.",
       meta: "Industrial Training Certificate",
-      pdf: "/portfolio/assests/AI_Training.pdf"
+      pdf: "/assests/AI_Training.pdf"
     },
     {
       icon: "⚙",
@@ -53,7 +53,7 @@ const Certificate = () => {
       subtitle: "AutoML Solutions",
       tagline: "Built ML solutions using AutoML tools for automated model selection.",
       meta: "Certificate",
-      pdf: "/portfolio/assests/Automated Machine Learning.pdf"
+      pdf: "/assests/Automated Machine Learning.pdf"
     }
   ];
 

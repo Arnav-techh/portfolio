@@ -15,7 +15,7 @@ const Projects = () => {
 
   const projects = [
     {
-      img: "/portfolio/assests/meditrack.jpg",
+      img: "/assests/meditrack.jpg",
       title: "MediTrack",
       subtitle: "Say No to Drugs Platform",
       tagline: "Digital health platform promoting safe medication and anti-drug awareness.",
@@ -23,7 +23,7 @@ const Projects = () => {
       github: "https://github.com/Arnav-techh/MediTrack"
     },
     {
-      img: "/portfolio/assests/sms-spam.jpg",
+      img: "/assests/sms-spam.jpg",
       title: "SMS Spam Detection",
       subtitle: "ML Classification App",
       tagline: "ML app that classifies SMS as spam or ham with full end-to-end pipeline.",
@@ -31,7 +31,7 @@ const Projects = () => {
       github: "https://github.com/Arnav-techh/SMS-Spam-Detection"
     },
     {
-      img: "/portfolio/assests/py-paint.jpg",
+      img: "/assests/py-paint.jpg",
       title: "Python Paint",
       subtitle: "Desktop Drawing App",
       tagline: "Tkinter-based desktop drawing app with multiple tools and color controls.",
@@ -39,7 +39,7 @@ const Projects = () => {
       github: "https://github.com/Arnav-techh/Python-Paint-Project"
     },
     {
-      img: "/portfolio/assests/saas-web.jpeg",
+      img: "/assests/saas-web.jpeg",
       title: "SaaS Builder",
       subtitle: "No-Code Website Platform",
       tagline: "Drag-and-drop platform for creating responsive websites without code.",
@@ -47,7 +47,7 @@ const Projects = () => {
       github: "https://github.com/Arnav-techh/SAAS-Website-Builder"
     },
     {
-      img: "/portfolio/assests/salesforce-p.jpeg",
+      img: "/assests/salesforce-p.jpeg",
       title: "Salesforce Portal",
       subtitle: "Project Management",
       tagline: "Role-based portal on Experience Cloud for managing projects, sprints & backlogs.",

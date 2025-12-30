@@ -40,7 +40,7 @@ const Contact = () => {
           <div className="contact-content">
             <div className="contact-left" data-aos="fade-right" data-aos-delay="300">
               <div className="contact-avatar">
-                <img src="/portfolio/assests/arnav.jpg" alt="Arnav Kaneriya" />
+                <img src="/assests/arnav.jpg" alt="Arnav Kaneriya" />
                 <div className="avatar-ring"></div>
               </div>
               
@@ -55,7 +55,7 @@ const Contact = () => {
                 
                 <div className="resume-btn-wrap">
                   <a
-                    href="/portfolio/assests/Arnav_Kaneriya_Resume.pdf"
+                    href="/assests/Arnav_Kaneriya_Resume.pdf"
                     className="resume-download-btn"
                     target="_blank"
                     rel="noreferrer"

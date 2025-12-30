@@ -128,7 +128,7 @@ const Hero = () => {
         <div className="hero-photo-wrap" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1200">
           <div className="hero-photo-circle">
             <img
-              src="/portfolio/assests/profile.jpg"
+              src="/assests/profile.jpg"
               alt="Arnav Kaneriya - Full Stack Developer"
               loading="lazy"
             />
