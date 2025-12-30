@@ -18,7 +18,7 @@ const Footer = () => {
                 <i className="bx bx-envelope"></i>
                 kaneriyaarnav@gmail.com
               </a>
-              <a href="tel:+91798998850" className="contact-item">
+              <a href="tel:+91 7909895850" className="contact-item">
                 <i className="bx bxs-phone"></i>
                 +91 7909895850
               </a>
