@@ -59,9 +59,8 @@ const Contact = () => {
                     className="resume-download-btn"
                     target="_blank"
                     rel="noreferrer"
-                    download
                   >
-                    📄 Download Resume
+                    📄 View Resume
                   </a>
                 </div>
                 
