@@ -20,7 +20,7 @@ const Certificate = () => {
       subtitle: "Web Development Training",
       tagline: "Training covering frontend and backend web development with hands-on projects.",
       meta: "Certificate",
-      pdf: "/portfolio/pulic/assests/full-stack-cert.pdf"
+      pdf: "/assests/full-stack-cert.pdf"
     },
     {
       icon: "🐍",
