@@ -9,7 +9,7 @@ const About = () => {
       <div className="about-profile-simple" data-aos="fade-up" data-aos-delay="200">
         <div className="profile-intro">
           <h3>Arnav Kaneriya</h3>
-          <p className="role">Full Stack Developer | AI Enthusiast | Indore, MP</p>
+          <p className="role">Full Stack Developer | AI Enthusiast | Indore</p>
           <p>
             Passionate developer building scalable web apps with <strong>React, Salesforce, Python </strong> 
              and exploring <strong>AI/ML solutions</strong>. B.Tech CSE (2021-2025).
