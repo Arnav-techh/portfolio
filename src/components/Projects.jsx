@@ -20,7 +20,8 @@ const Projects = () => {
       subtitle: "Say No to Drugs Platform",
       tagline: "Digital health platform promoting safe medication and anti-drug awareness.",
       tech: "React · Bootstrap · MUI · Framer Motion · Google Maps API",
-      github: "https://github.com/Arnav-techh/MediTrack"
+      github: "https://github.com/Arnav-techh/MediTrack",
+      demo: "https://meditrack.vercel.app" // ADD YOUR LINK
     },
     {
       img: "/assests/sms-spam.jpg",
@@ -28,23 +29,26 @@ const Projects = () => {
       subtitle: "ML Classification App",
       tagline: "ML app that classifies SMS as spam or ham with full end-to-end pipeline.",
       tech: "Python · Pandas · Scikit-learn · NLTK · Streamlit",
-      github: "https://github.com/Arnav-techh/SMS-Spam-Detection"
+      github: "https://github.com/Arnav-techh/SMS-Spam-Detection",
+      demo: "https://sms-spam-detection.vercel.app" // ADD YOUR LINK
     },
     {
       img: "/assests/py-paint.jpg",
       title: "Python Paint",
       subtitle: "Desktop Drawing App",
       tagline: "Tkinter-based desktop drawing app with multiple tools and color controls.",
-      tech: "Python · Tkinter",
-      github: "https://github.com/Arnav-techh/Python-Paint-Project"
+      tech: "Python · Tkinter · Flask",
+      github: "https://github.com/Arnav-techh/Python-Paint-Project",
+      demo: "https://python-paint.vercel.app" // ADD YOUR LINK
     },
     {
       img: "/assests/saas-web.jpeg",
       title: "SaaS Builder",
       subtitle: "No-Code Website Platform",
       tagline: "Drag-and-drop platform for creating responsive websites without code.",
-      tech: "React · Node · Express · MongoDB · AWS",
-      github: "https://github.com/Arnav-techh/SAAS-Website-Builder"
+      tech: "React · TailwindCSS · GrapeJS",
+      github: "https://github.com/Arnav-techh/SAAS-Website-Builder",
+      demo: "https://saas-website-builder.vercel.app" // ADD YOUR LINK
     },
     {
       img: "/assests/salesforce-p.jpeg",
@@ -52,7 +56,8 @@ const Projects = () => {
       subtitle: "Project Management",
       tagline: "Role-based portal on Experience Cloud for managing projects, sprints & backlogs.",
       tech: "Apex · LWC · Experience Cloud · Custom Objects · Triggers",
-      github: "#"
+      github: "#",
+      demo: "#" // Internal Salesforce - No public demo
     }
   ];
 
@@ -83,24 +88,59 @@ const Projects = () => {
               {currentIndex + 1}/5
             </div>
             
-            <a 
-              href={currentProject.github} 
-              target="_blank" 
-              rel="noreferrer" 
-              className="proj-github-btn"
-            >
-              <i className='bx bxl-github'></i>
-              View Code →
-            </a>
+            {/* 👇 NEW BUTTONS GROUP 👇 */}
+            <div className="proj-buttons-group" style={{display: 'flex', gap: '12px', marginTop: '16px'}}>
+              <a 
+                href={currentProject.github} 
+                target="_blank" 
+                rel="noreferrer" 
+                className="proj-github-btn"
+                style={{flex: 1, textAlign: 'center'}}
+              >
+                <i className='bx bxl-github'></i>
+                View Code
+              </a>
+              
+              {currentProject.demo !== "#" && (
+                <a 
+                  href={currentProject.demo} 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  className="proj-demo-btn"
+                  style={{
+                    flex: 1, 
+                    textAlign: 'center',
+                    background: 'linear-gradient(135deg, #10b981, #059669)',
+                    color: 'white',
+                    padding: '12px 20px',
+                    borderRadius: '12px',
+                    fontWeight: '600',
+                    textDecoration: 'none',
+                    transition: 'all 0.3s',
+                    boxShadow: '0 4px 15px rgba(16, 185, 129, 0.3)'
+                  }}
+                  onMouseOver={(e) => {
+                    e.target.style.transform = 'translateY(-2px)';
+                    e.target.style.boxShadow = '0 8px 25px rgba(16, 185, 129, 0.4)';
+                  }}
+                  onMouseOut={(e) => {
+                    e.target.style.transform = 'translateY(0)';
+                    e.target.style.boxShadow = '0 4px 15px rgba(16, 185, 129, 0.3)';
+                  }}
+                >
+                  🚀 View Demo
+                </a>
+              )}
+            </div>
+            {/* 👆 NEW BUTTONS GROUP 👆 */}
           </div>
         </article>
 
-        {/* ORIGINAL SWIPE BUTTONS */}
         <button className="carousel-prev" onClick={goToPrev}>
-          &#8249;
+          ‹
         </button>
         <button className="carousel-next" onClick={goToNext}>
-          &#8250;
+          ›
         </button>
 
         <div className="carousel-dots">
