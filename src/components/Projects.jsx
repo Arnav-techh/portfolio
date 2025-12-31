@@ -21,7 +21,7 @@ const Projects = () => {
       tagline: "Digital health platform promoting safe medication and anti-drug awareness.",
       tech: "React · Bootstrap · MUI · Framer Motion · Google Maps API",
       github: "https://github.com/Arnav-techh/MediTrack",
-      demo: "https://meditrack.vercel.app" // ADD YOUR LINK
+      demo: "https://medi-track-one-chi.vercel.app" // YOUR LINK
     },
     {
       img: "/assests/sms-spam.jpg",
@@ -30,7 +30,7 @@ const Projects = () => {
       tagline: "ML app that classifies SMS as spam or ham with full end-to-end pipeline.",
       tech: "Python · Pandas · Scikit-learn · NLTK · Streamlit",
       github: "https://github.com/Arnav-techh/SMS-Spam-Detection",
-      demo: "https://sms-spam-detection.vercel.app" // ADD YOUR LINK
+      demo: "https://sms-spam-detection-psi.vercel.app" // YOUR LINK
     },
     {
       img: "/assests/py-paint.jpg",
@@ -39,7 +39,7 @@ const Projects = () => {
       tagline: "Tkinter-based desktop drawing app with multiple tools and color controls.",
       tech: "Python · Tkinter · Flask",
       github: "https://github.com/Arnav-techh/Python-Paint-Project",
-      demo: "https://python-paint.vercel.app" // ADD YOUR LINK
+      demo: "https://python-paint-project.vercel.app"
     },
     {
       img: "/assests/saas-web.jpeg",
@@ -48,7 +48,7 @@ const Projects = () => {
       tagline: "Drag-and-drop platform for creating responsive websites without code.",
       tech: "React · TailwindCSS · GrapeJS",
       github: "https://github.com/Arnav-techh/SAAS-Website-Builder",
-      demo: "https://saas-website-builder.vercel.app" // ADD YOUR LINK
+      demo: "https://saas-website-builder-arnav.vercel.app"
     },
     {
       img: "/assests/salesforce-p.jpeg",
@@ -57,7 +57,7 @@ const Projects = () => {
       tagline: "Role-based portal on Experience Cloud for managing projects, sprints & backlogs.",
       tech: "Apex · LWC · Experience Cloud · Custom Objects · Triggers",
       github: "#",
-      demo: "#" // Internal Salesforce - No public demo
+      demo: "#"
     }
   ];
 
@@ -88,14 +88,13 @@ const Projects = () => {
               {currentIndex + 1}/5
             </div>
             
-            {/* 👇 NEW BUTTONS GROUP 👇 */}
-            <div className="proj-buttons-group" style={{display: 'flex', gap: '12px', marginTop: '16px'}}>
+            {/* ✨ SAME SIZE + COLOR BUTTONS ✨ */}
+            <div className="proj-buttons-group">
               <a 
                 href={currentProject.github} 
                 target="_blank" 
                 rel="noreferrer" 
-                className="proj-github-btn"
-                style={{flex: 1, textAlign: 'center'}}
+                className="proj-action-btn github-btn"
               >
                 <i className='bx bxl-github'></i>
                 View Code
@@ -106,33 +105,12 @@ const Projects = () => {
                   href={currentProject.demo} 
                   target="_blank" 
                   rel="noreferrer" 
-                  className="proj-demo-btn"
-                  style={{
-                    flex: 1, 
-                    textAlign: 'center',
-                    background: 'linear-gradient(135deg, #10b981, #059669)',
-                    color: 'white',
-                    padding: '12px 20px',
-                    borderRadius: '12px',
-                    fontWeight: '600',
-                    textDecoration: 'none',
-                    transition: 'all 0.3s',
-                    boxShadow: '0 4px 15px rgba(16, 185, 129, 0.3)'
-                  }}
-                  onMouseOver={(e) => {
-                    e.target.style.transform = 'translateY(-2px)';
-                    e.target.style.boxShadow = '0 8px 25px rgba(16, 185, 129, 0.4)';
-                  }}
-                  onMouseOut={(e) => {
-                    e.target.style.transform = 'translateY(0)';
-                    e.target.style.boxShadow = '0 4px 15px rgba(16, 185, 129, 0.3)';
-                  }}
+                  className="proj-action-btn demo-btn"
                 >
-                  🚀 View Demo
+                  🚀 Live Demo
                 </a>
               )}
             </div>
-            {/* 👆 NEW BUTTONS GROUP 👆 */}
           </div>
         </article>
 
@@ -153,6 +131,74 @@ const Projects = () => {
           ))}
         </div>
       </div>
+
+      <style jsx>{`
+        .proj-buttons-group {
+          display: flex;
+          gap: 12px;
+          margin-top: 24px;
+          padding-top: 20px;
+          border-top: 1px solid #e5e7eb;
+        }
+
+        .proj-action-btn {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          padding: 16px 24px;
+          border-radius: 12px;
+          font-size: 15px;
+          font-weight: 600;
+          text-decoration: none;
+          height: 56px;
+          border: 2px solid transparent;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          font-family: inherit;
+          box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+        }
+
+        .github-btn {
+          background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+          color: #475569;
+          border-color: #e2e8f0;
+        }
+
+        .demo-btn {
+          background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+          color: white;
+          border-color: #2563eb;
+        }
+
+        .proj-action-btn:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+
+        .github-btn:hover {
+          background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+          border-color: #cbd5e1;
+          color: #334155;
+        }
+
+        .demo-btn:hover {
+          background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+          box-shadow: 0 12px 30px rgba(59, 130, 246, 0.4);
+        }
+
+        @media (max-width: 768px) {
+          .proj-buttons-group {
+            flex-direction: column;
+            gap: 10px;
+          }
+          .proj-action-btn {
+            height: 52px;
+            padding: 14px 20px;
+            font-size: 14px;
+          }
+        }
+      `}</style>
     </section>
   );
 };
