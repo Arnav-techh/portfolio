@@ -5,8 +5,7 @@ const roles = [
   "Salesforce Developer", 
   "Python Developer",
   "AI/ML Enthusiast",
-  "React Developer",
-  "Freelance Developer",  // ✅ ADDED
+  "React Developer", 
   "Cloud Enthusiast"
 ];
 
@@ -68,7 +67,7 @@ const Hero = () => {
           {/* UPDATED CTA - RESUME REMOVED */}
           <div className="btns hero-buttons" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
             <a href="#projects" className="btn btn-primary" onClick={() => document.querySelector('#projects')?.scrollIntoView({behavior: 'smooth'})}>
-              👨‍💻 View My Projects
+              💻 View My Projects
             </a>
             <a href="#contact" className="btn btn-outline" onClick={() => document.querySelector('#contact')?.scrollIntoView({behavior: 'smooth'})}>
               💬 Let's Connect

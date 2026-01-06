@@ -5,7 +5,6 @@ const About = () => {
         About Me<div className="underline"></div>
       </h2>
       
-      {/* SIMPLIFIED PROFILE SECTION */}
       <div className="about-profile-simple" data-aos="fade-up" data-aos-delay="200">
         <div className="profile-intro">
           <h3>Arnav Kaneriya</h3>

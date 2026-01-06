@@ -51,7 +51,6 @@ const Skills = () => {
       </h2>
 
       <div className="skills-container" data-aos="fade-up" data-aos-delay="200">
-        {/* TABS */}
         <div className="skills-tabs">
           {tabs.map((tab) => (
             <button
@@ -65,7 +64,6 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* SKILLS CONTENT */}
         <div className="skills-content">
           {skillsData[activeTab].map((skill, index) => (
             <div

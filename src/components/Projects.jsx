@@ -21,7 +21,7 @@ const Projects = () => {
       tagline: "Digital health platform promoting safe medication and anti-drug awareness.",
       tech: "React · Bootstrap · MUI · Framer Motion · Google Maps API",
       github: "https://github.com/Arnav-techh/MediTrack",
-      demo: "https://medi-track-one-chi.vercel.app" // YOUR LINK
+      demo: "https://medi-track-one-chi.vercel.app" 
     },
     {
       img: "/assests/sms-spam.jpg",
@@ -30,7 +30,7 @@ const Projects = () => {
       tagline: "ML app that classifies SMS as spam or ham with full end-to-end pipeline.",
       tech: "Python · Pandas · Scikit-learn · NLTK · Streamlit",
       github: "https://github.com/Arnav-techh/SMS-Spam-Detection",
-      demo: "https://sms-spam-detection-psi.vercel.app" // YOUR LINK
+      demo: "https://sms-spam-detection-psi.vercel.app" 
     },
     {
       img: "/assests/py-paint.jpg",
@@ -88,7 +88,6 @@ const Projects = () => {
               {currentIndex + 1}/5
             </div>
             
-            {/* ✨ SAME SIZE + COLOR BUTTONS ✨ */}
             <div className="proj-buttons-group">
               <a 
                 href={currentProject.github} 

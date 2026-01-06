@@ -42,8 +42,6 @@ body {
   background: var(--bg-main);
 }
 
-/* TRANSPARENT HEADER - NEW */
-/* ================== HEADER BASE ================== */
 .transparent-header {
   position: fixed;
   top: 0;
@@ -60,7 +58,7 @@ body {
   background: rgba(42, 20, 88, 0.95);
 }
 
-/* ================== HEADER LOGO STYLING ================== */
+/* HEADER LOGO STYLING */
 .logo-branding {
   display: flex;
   align-items: center;
@@ -119,7 +117,7 @@ body {
   }
 }
 
-/* ================== NAV LAYOUT (DESKTOP) ================== */
+/* NAV LAYOUT (DESKTOP) */
 .nav {
   height: 6rem;
   padding: 0 8%;
@@ -188,7 +186,7 @@ body.light .nav-links a {
   transform: translateY(-1px);
 }
 
-/* ================== MOBILE STYLES ================== */
+/* MOBILE STYLES */
 @media (max-width: 768px) {
   .nav {
     height: auto;
@@ -260,7 +258,6 @@ section {
 }
 
 /* HERO */
-/* HERO SECTION - COMPLETE */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -565,11 +562,6 @@ body.light .icon-btn, body.light .hero-icon {
 /* ABOUT */
 .about {
   background: radial-gradient(circle at top left, #a855f7 0, #2b1055 40%, #1a103f 100%);
-
-
-
-
-
   padding: 12rem 8% 8rem;
 }
 
