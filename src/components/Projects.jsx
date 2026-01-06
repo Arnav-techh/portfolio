@@ -1,14 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
+  //*useEffect(() => { *//
+    /*const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % 5);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, []); */
 
   const goToPrev = () => setCurrentIndex((prev) => (prev - 1 + 5) % 5);
   const goToNext = () => setCurrentIndex((prev) => (prev + 1) % 5);
